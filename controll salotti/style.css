@@ -18,13 +18,14 @@ header img {
 }
 .mae {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 
 }
 header h1 {
     color: blue;
     margin: auto;
     font-size: 3rem;
+    margin-top: 2rem;
 }
 header button {
     background-color: blue;
@@ -36,9 +37,7 @@ header button {
     margin: 0 30rem;
     font-size: 1rem;
 }
-.t {
-    gap: 5rem;
-}
+
 .formulario {
     display: flex;
     flex-direction: column;
@@ -60,4 +59,22 @@ input {
 }
 label {
     margin: 2px;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 0.8rem 1.4rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    height: 20px;
+    width: 100px;
+    margin: 40px 10px ;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+    background-color: darkblue;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
