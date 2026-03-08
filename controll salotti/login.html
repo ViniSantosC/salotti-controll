@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -13,15 +13,25 @@
   </head>
   <body class="loginm">
     <main class="contlo">
-      <form id="form" action="interface.html">
+      <form id="form">
         <img src="img/icons8-lock.svg" alt="logo" class="logo1" />
         <h2 class="tilo">Salotti-Controll</h2>
         <h4 class="subtitulo">Controle de Alunos</h4>
-        <input type="text" placeholder="Usuário" class="inp" /><br />
-        <input type="password" placeholder="Senha" class="inp1" /><br />
-        <button
+        <input
+          type="text"
+          id="usuario"
+          placeholder="Usuário"
+          class="inp"
+        /><br />
+        <input
+          type="password"
+          id="senha"
+          placeholder="Senha"
+          class="inp1"
+        /><br />
+        <button 
           class="btn1"
-          onclick="return alert('Obrigado por escolher o nosso site e confiar em nosso trabalho! É um prazer ter você aqui e saber que nossas soluções fazem a diferença no seu dia a dia.')"
+          id="btnlogin"
         >
           Entrar
         </button>
@@ -29,6 +39,6 @@
         <a onclick="renderLogin()" class="nao">Não tem conta? Cadastre-se</a>
       </form>
     </main>
-    <script src="script.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>

@@ -1,19 +1,47 @@
-function sair () {
-    window.location.href='login.html';
+
+const inputnome = document.getElementById("nome");
+const inputturma = document.getElementById("turma");
+const inputra = document.getElementById("ra");
+const btnadicionar = document.getElementById("btnadicionar");
+const listaalunos = document.getElementById("listaalunos");
+const alunos = [];
+
+
+
+btnadicionar.addEventListener("click", function () {
+  const nome = inputnome.value;
+  const turma = inputturma.value;
+  const ra = inputra.value;
+
+  if (nome === "" || turma === "" || ra === "") {
+    alert("prencha todos os campos");
+    return;
+  }
+
+  const aluno = {
+    nome: nome,
+    turma: turma,
+    ra: ra,
+  };
+  alunos.push(aluno);
+  rederizaralunos();
+  
+  inputnome.value = "";
+  inputturma.value = ""; 
+  inputra.value = "";
+});
+
+function rederizaralunos() {
+  listaalunos.innerHTML = "";
+
+  for (let i = 0; i < alunos.length; i++) {
+    listaalunos.innerHTML += `
+        <div class="card-aluno">
+        <p><strong>Nome:</strong>${alunos[i].nome}</p>
+        <p><strong>Turma:</strong>${alunos[i].turma}</p>
+        <p><strong>Ra:</strong>${alunos[i].ra}</p>
+        </div>
+        :`;
+  }
 }
 
-const form = document.getElementById("form")
-
-function renderLogin() {
-    form.innerHTML = `
-        <head>title
-        </head>
-        <img src="img/icons8-lock.svg" alt="logo" class="logo1">
-            <h2 class="tilo">Salotti-Controll</h2>
-            <h4 class="subtitulo">Controle de Alunos</h4>
-            <input type="text" placeholder="Usuário" class="inp"><br>
-            <input type="email" placeholder="Email" class="inp"><br>
-            <input type="password" placeholder="Senha" class="inp1"><br>
-            <button type="button" class="btn1" onclick="if(confirm('Agradecemos por confiar em nosso site! Seus dados serão guardados com total segurança e sigilo em nossa base')) sair()">Cadastrar</button>
-    `
-}

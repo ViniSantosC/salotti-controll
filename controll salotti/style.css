@@ -193,7 +193,21 @@ label {
     border: 1px solid #33334d;
     
 }
-.inp1::placeholder,.inp::placeholder {
+.inpv {
+    display: block;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    background-image: url(img/iconeemail.png);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    height: 20px;
+    color: #ffffff;
+    background-color: #1a1a24;
+    width: 25%;
+    padding-left: 60px;
+    border: 1px solid #33334d;
+}
+.inp1::placeholder,.inp::placeholder,.inpv::placeholder {
      color: #6b7280
 }
 .inp1 {
@@ -244,4 +258,19 @@ label {
 }
 .nao:hover {
     color: violet;
+}
+.card-aluno {
+    display: block;
+    margin: 1rem auto;
+    width: 65%;
+    height: auto;
+    background: #160a2c;
+    border: 1px solid rgba(147, 51, 234, 0.2); 
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.card-aluno p {
+    color: white;
+    font-size: 1.5rem;
 }
