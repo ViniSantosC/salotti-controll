@@ -2,8 +2,7 @@ const form = document.getElementById("form");
 const inputusuario = document.getElementById("usuario");
 const inputsenha = document.getElementById("senha");
 const btnlogin = document.getElementById("btnlogin");
-const logins = [];
-
+const validade = document.getElementById('valido')
 
 
 
@@ -15,7 +14,10 @@ btnlogin.addEventListener("click", function (event) {
   if (usuario === "admin" && senha === "1234") {
     window.location.href = "interface.html";
   } else {
-    alert("Usuário ou senha incorretos");
+    validade.innerHTML = ""
+    validade.innerHTML =`<p> usuario invalido </p>
+    <p> senha invalida </p>`
+    
   }
 });
 
