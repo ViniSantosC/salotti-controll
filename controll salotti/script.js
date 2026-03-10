@@ -6,8 +6,8 @@ const btnadicionar = document.getElementById("btnadicionar");
 const listaalunos = document.getElementById("listaalunos");
 const inputforte = document.getElementById("forte");
 const inputfraco = document.getElementById("fraco");
-const alunos = [];
 
+const alunos = [];
 
 // isso e uma funçao que vai ouvi o botao sendo que voce ja falou qual era e vai ativa a funcao que const naquilo de novo porem um diferente tipo ele ta falando aluno e o que ele digita no inpu que voce declarou antes 
 btnadicionar.addEventListener("click", function () {
