@@ -210,8 +210,13 @@ header button:hover {
   width: 95%;
   align-items: center;
 }
-.cadas {
+.aparecer {
   display: block;
+}
+.desaparece {
+  display: none;
+}
+.cadas {
   background-color: #1b1a2f;
   padding: 1.5rem;
   width: 95%;
@@ -258,6 +263,7 @@ header button:hover {
 }
 .cadas label {
   color: #a0a0a0;
+  margin-top: 1rem;
 }
 .cadas button {
   display: block;
@@ -276,9 +282,7 @@ header button:hover {
 }
 .icon {
   border-radius: 10px;
-  box-shadow:
-    0 6px 16px rgba(0, 0, 0, 0.4),
-    0 0 15px rgba(139, 92, 246, 0.5);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4), 0 0 15px rgba(139, 92, 246, 0.5);
   background: rgba(22, 14, 37, 0.15);
   padding: 0.5rem;
 }
@@ -330,9 +334,7 @@ header button:hover {
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(147, 51, 234, 0.3);
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .conteudo button:hover {
@@ -396,9 +398,7 @@ header button:hover {
   width: 500px;
   margin: 1rem auto;
   border-radius: 1rem;
-  box-shadow:
-    10px 10px 20px #bebebe,
-    -10px -10px 20px #ffffff;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
 }
 input {
   margin: auto;
